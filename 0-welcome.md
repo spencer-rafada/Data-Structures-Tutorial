@@ -27,7 +27,12 @@ Each module will contain description, examples to work on and its solution, and 
 
 > "I will a car for the great multitude." - Henry Ford
 
-Before you go, think of how this...
+Before you go, think of the process of making this...
+![car parts](images/car-00.jpg)
+turns to this..
+![car](images/car-01.jpg)
+
+Is the **order** important in assembling these parts?
 
 ## Contact
 
