@@ -25,7 +25,7 @@ Every programmer should understand how data structures organize data, their [per
 
 Each module will contain description, examples to work on and its solution, and the performance table for the data structure.
 
-> "I will a car for the great multitude." - Henry Ford
+## "I will a car for the great multitude." - Henry Ford
 
 Before you go, think of the process of making this...
 ![car parts](images/car-00.jpg)
