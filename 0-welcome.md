@@ -6,13 +6,13 @@
 
 Here is a quick problem to think about. 
 
-Insert Picture Here
+![An image of five tires stacked together](images/tires-00.jpg)
 
 There are five tires stacked together. 
 - How much work is done to remove a tire from the top of the tower?
 - How much work is done to remove the most bottom tire?
 
-Picture of tires and tasks
+![An image of tires and work](images/tires-01.jpg)
 
 For the first task, it is easy peasy! We just have to grab the top tire and we are done. No sweat at all. However, it is quite complicated for the second task. We have to move all of the tires above the tire we want to get. Take the desired (bottom) tire. Put the stack of tires back together. That is **3 steps** (*not including all the sweat and labor we have to go to*) compared to the first task wherein we just did **1 step**.
 
@@ -24,6 +24,10 @@ Every programmer should understand how data structures organize data, their [per
 - [Trees](3-trees.md)
 
 Each module will contain description, examples to work on and its solution, and the performance table for the data structure.
+
+> "I will a car for the great multitude." - Henry Ford
+
+Before you go, think of how this...
 
 ## Contact
 
