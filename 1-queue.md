@@ -1,3 +1,2 @@
 # Queue
 
-How was
