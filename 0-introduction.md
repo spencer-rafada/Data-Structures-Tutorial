@@ -1,7 +1,7 @@
 # Data Structures and Cars
 
 **What are Data Structures?**
-
+-
 ***Data Structures*** are a means of *organizing and storing data in a computer*. As programmers, it is essential to understand these data structures in order to perform operations on the stored data in the *most efficient* way possible.
 
 Here is a quick problem to think about. 
@@ -23,9 +23,11 @@ Every programmer should understand how data structures organize data, their [per
 - [Linked Lists](2-linkedlist.md)
 - [Trees](3-trees.md)
 
-Each module will contain description, examples to work on and its solution, and the performance table for the data structure.
+Each module will contain description, examples  and its solution, the performance table for the data structure, and a takeaway task for you to work on.
 
-## "I will create a car for the great multitude." - Henry Ford
+Takeaway Task
+-
+> "I will create a car for the great multitude." - Henry Ford
 
 Before you go, think of the process of making this...
 ![car parts](images/car-00.jpg)
