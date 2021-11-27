@@ -110,7 +110,10 @@ What happens when there are no cars in the pits and one of the pit crew accident
 
 To improve the quality of our code, we can add conditional statements to avoid the error.
 ```python
-
+if len(pitstop_queue) > 0:
+    pitstop_queue.pop(0)
+else:
+    print("No cars in the pit.")
 ```
 
 For Problem 3, it works perfectly fine when the queue is not empty. However, the program crashes if the queue is empty. As a designer, how would you fix this to increase the quality of your program?
