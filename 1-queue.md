@@ -85,7 +85,7 @@ while(selection != "4"):
         pass
     elif selection == "3":
         # Problem 3, figure out how to display the queue when it is empty
-        pass
+        pitstop_queue.display()
 ```
 After running the code, think of what you *expect* will happen every time the user select **1** and **2**. What is not happening for each selection?
 
@@ -105,3 +105,16 @@ first_item = pitstop_queue[0]
 del pitstop_queue[0]
 ```
 After removing the first item in the queue, we use a loop to shift everything to the front. *That is also why removing an item in a queue is O(n)*
+
+For Problem 3, it works perfectly fine when the queue is not empty. However, the program crashes if the queue is empty. As a designer, how would you fix this to increase the quality of your program?
+```python
+elif selection == "3":
+    # Problem 3, figure out how to display the queue when it is empty
+    if len(pitstop_queue) > 0:
+        pitstop_queue.display()
+    else:
+        print("Pit is clear.")
+```
+We add conditional statements to make sure that it only displays the queue when pitstop_queue is not empty. The next condition would be to print it is clear when pitstop_queue is empty.
+
+Here is the [solution](py-files)
