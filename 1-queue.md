@@ -117,4 +117,7 @@ elif selection == "3":
 ```
 We add conditional statements to make sure that it only displays the queue when pitstop_queue is not empty. The next condition would be to print it is clear when pitstop_queue is empty.
 
-Here is the [solution](py-files)
+Here is the [solution](py-files/queues1A.py) for the example.
+
+Takeaway Task
+-
