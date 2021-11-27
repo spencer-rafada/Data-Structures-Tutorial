@@ -30,7 +30,10 @@ while(selection != "4"):
         pitstop_queue.append(pit)
     elif selection == "2":
         # Problem 2, make algorithm for dequeuing a car
-        pitstop_queue.pop(0)
+        if len(pitstop_queue) > 0:
+            pitstop_queue.pop(0)
+        else:
+            print("No cars in the pit.")
     elif selection == "3":
         # Problem 3, figure out how to display the queue when it is empty
         if len(pitstop_queue) > 0:

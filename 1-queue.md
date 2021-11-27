@@ -106,6 +106,13 @@ del pitstop_queue[0]
 ```
 After removing the first item in the queue, we use a loop to shift everything to the front. *That is also why removing an item in a queue is O(n)*
 
+What happens when there are no cars in the pits and one of the pit crew accidentally selected 2? It will output an IndexError: pop from empty list.
+
+To improve the quality of our code, we can add conditional statements to avoid the error.
+```python
+
+```
+
 For Problem 3, it works perfectly fine when the queue is not empty. However, the program crashes if the queue is empty. As a designer, how would you fix this to increase the quality of your program?
 ```python
 elif selection == "3":
