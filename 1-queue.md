@@ -8,15 +8,17 @@ Today, we will talk about a data structure wherein the order the data is enterre
 
 **What are Queues?**
 -
-**Queues** is characterized as *"First In, First Out"* system and can be implemented using a Python lists.
+**Queues** is characterized as *"First In, First Out"* system and can be implemented using a Python lists. 
+> Remember: Python lists have **fixed sizes**.
 
 In the example from the [introduction](0-introduction.md), we will assume that the tower of tires is a list.
 ![image of tower of tires](images/tires-00.jpg)
 In Python code, the code would look like this...
 ```python
-tires = [1, 2, 3, 4, 5]
+tires = [1, 2, 3, 4, 5] # fixed size
 # The #1 tire is the bottom one since it is the first one that is put.
 ```
+> If we would have to make the size bigger, we would have to copy all of the contents of the lists. Initialize a bigger lists (preferrably twice the size of the older lists). Move all the contents of the older lists to the bigger lists. This takes O(n) performance because we would have to iterate through each data in the lists and copy.
 
 In Task 1, we used **Stacks** to solve the problem. It is a lot faster to take the tire from the top of the tower than taking the most bottom one. Meanwhile, for task 2, we used **Queues** to solve the problem. However, for this specific problem it is not safe to use tires that has been sitting in the garage for too long because it may develop *tire bubbles*.
 
