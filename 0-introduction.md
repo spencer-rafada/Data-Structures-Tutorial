@@ -32,6 +32,7 @@ Takeaway Task
 Before you go, think of the process of making this...
 
 ![car parts](images/car-00.jpg)
+
 to this..
 
 ![car](images/car-01.jpg)
