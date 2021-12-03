@@ -30,8 +30,10 @@ Takeaway Task
 > "I will create a car for the great multitude." - Henry Ford
 
 Before you go, think of the process of making this...
+
 ![car parts](images/car-00.jpg)
 to this..
+
 ![car](images/car-01.jpg)
 
 Is the **order** important in assembling these parts?
