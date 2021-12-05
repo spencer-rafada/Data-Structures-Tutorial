@@ -12,17 +12,17 @@ Today, we will introduce a new data structure called the **Linked List**.
 =
 Python lists are *contiguous in memory* which mean each element in the list are right next to each other in memory. This is also why finding the length of the list is O(1) in performance. **Linked Lists** are similar to Python lists, but the difference is each element in the list *is at some location in memory*. There is no guarantee that each element will be next to each other in memory. For each element in the linked lists, we will call it a **node**.
 
-TODO: Picture of Structure of both contiguous and linked list without a pointer.
+![linked list-00](images/linkedlist-00.jpg)
 
 How do Linked Lists work?
 =
 How do we link each data in the list if they are at different location in memory? For us to connect each data in the linked list, we connect them using **pointers**. Each node will contain a **value** and a link to the **next node**. The first node in the linked list is called the **head**.
 
-TODO: Picture of Linked list with links
+![linekd list-01](images/linkedlist-01.jpg)
 
 In the linked list shown above, we can only traverse in one direction similar to Python lists. The first node is called a **head**. Most linked lists maintain a bi-directional linking between nodes. Bi-direction means that it can traverse forward and backward. To do this we will have to add another pointer **previous** pointing to the previous node. The **doubly-linked list** shown below has both a head and a **tail**.
 
-TODO: Picture of doubly-linked list.
+![doubly linked list](images/linkedlist-02.jpg)
 
 **How do we insert or remove data in Linked Lists?**
 -
@@ -45,7 +45,7 @@ head.prev = new_node
 head = new_node
 ```
 
-TODO: Insert Visual for Inserting
+![insert front](images/linkedlist-insertfront.jpg)
 
 2. In the middle
 ```python
@@ -61,19 +61,20 @@ current_node.next.prev = new_node
 current_node.next = new_node
 ```
 
-TODO: Insert Visual of Middle Insertion
+![insert middle](images/linkedlist-insertmiddle.jpg)
 
 3. From the back
 ```python
 # 1. Create a new node
 new_node = LinkedList.Node(value)
 # 2. Set the "prev" of the new_node to the tail
-new_node.next = tail
+new_node.prev = tail
 # 3. Set the "next" of the head to the tail
 tail.next = new_node
 # 4. Set the new_node as the tail
 tail = new_node
 ```
+![insert back](images/linkedlist-insertback.jpg)
 
 b. **Removing in Linked Lists**
 
@@ -84,7 +85,7 @@ head.next.prev = None
 # 2. Set the head to the second node
 head = head.next
 ```
-TODO: Visual of removing from front
+![remove front](images/linkedlist-removefront.jpg)
 
 2. From the middle
 ```python
@@ -94,7 +95,7 @@ current.next.prev = current.prev
 current.prev.next = current.next
 ```
 
-TODO: VIsual for removing from middle
+![remove middle](images/linkedlist-removemiddle.jpg)
 
 3. From the back
 ```python
@@ -103,8 +104,7 @@ tail.prev.next = None
 # 2. Set the node before the tail as the new tail
 tail = tail.prev
 ```
-
-TODO: Visual for removing from back
+![remove back](images/linkedlist-removeback.jpg)
 
 We mentioned earlier that whenever Formula 1 cars drive, millions of data are gathered. 100 gig of data can be accumulated in a single week. How can Linked List help with the performance 
 
@@ -120,3 +120,6 @@ Operation | Dynamic Array | Linked List
 | Remove Back | O(1) | O(1)
 
 TODO: Example Tasks and Takeaway Tasks
+
+Examples
+=
