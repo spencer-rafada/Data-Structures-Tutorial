@@ -12,7 +12,7 @@ Today, we will introduce a new data structure called the **Linked List**.
 =
 Python lists are *contiguous in memory* which mean each element in the list are right next to each other in memory. This is also why finding the length of the list is O(1) in performance. **Linked Lists** are similar to Python lists, but the difference is each element in the list *is at some location in memory*. There is no guarantee that each element will be next to each other in memory. For each element in the linked lists, we will call it a **node**.
 
-![linked list-00](images/linkedlist-00.jpg)
+![linked list](images/linkedlist-00.jpg)
 
 How do Linked Lists work?
 =
