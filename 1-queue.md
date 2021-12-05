@@ -34,7 +34,7 @@ When making cars, there is a *list* of instructions to follow from *first* to *l
 We always add items or *data* from the back and remove items from the front.
 
 Queues and Functions
--
+=
 ![pitstop](images/queues-pitstop-00.jpg)
 In every grand prix, the driver has to make a pitstop to either change tires for more grip or repair damages. A pitstop crew can only care for a single car at a time so what happens when two or more cars enter the pit? They are eventually in a line. That line can be called a queue. When they finish changing the tires, the first car goes out of the pits.
 
