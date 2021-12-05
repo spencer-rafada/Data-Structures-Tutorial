@@ -1,4 +1,5 @@
 # Queue
+
 ![car](images/car-01.jpg)
 Have you finished the takeaway tasks from the introduction yet? Well, if you didn't, you should have at least tried to because that is how these modules are designed for understanding. **Prepare** to class by reading, **attend** classroom discussions, and **do** takeaway tasks.
 
@@ -7,7 +8,7 @@ If you did do the task, what is the process of doing it? Is the **order** of arr
 Today, we will talk about a data structure wherein the order the data is enterred is important too! This Data Structure is known as a **Queue**.
 
 **What are Queues?**
--
+=
 **Queues** is characterized as *"First In, First Out"* system and can be implemented using a Python lists. 
 > Remember: Python lists have **fixed sizes**.
 
@@ -26,8 +27,8 @@ In Task 1, we used **Stacks** to solve the problem. It is a lot faster to take t
 
 By the way, Stacks are *"First in, First Out"* system that can also be implemented using Python lists. However, we will not focus on Stacks, but here is a link if you want to learn more about [Stacks](https://byui-cse.github.io/cse212-course/lesson03/03-prepare.html).
 
-How do Queues work?
--
+**How do Queues work?**
+=
 When making cars, there is a *list* of instructions to follow from *first* to *last*. Likewise, queues have a *front* and *back*. 
 ![Queues](images/queues-tires-00.jpg)
 We always add items or *data* from the back and remove items from the front.
@@ -47,7 +48,7 @@ Funtions / Python Code | Description | Cars | Performance |
 | if len(car_queue) == 0: | Returns true if the length of the queue is zero or queue is empty | Check if there are cars in the pits | O(1) - performance for checking if the list is empty
 
 Examples
--
+=
 We will now code a program that will help the pitcrew keep a list of incoming cars.
 
 >You can copy the code to a new file to work on it.
@@ -132,5 +133,5 @@ We add conditional statements to make sure that it only displays the queue when 
 Here is the [solution](files/queues1A.py) for the example.
 
 Takeaway Task
--
+=
 TODO: 
