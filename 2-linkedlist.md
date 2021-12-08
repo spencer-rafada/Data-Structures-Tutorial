@@ -119,10 +119,15 @@ Operation | Dynamic Array | Linked List
 | Remove Middle | O(n) | O(n)
 | Remove Back | O(1) | O(1)
 
+Debugging using Test Cases
+=
+TODO: optimize this
+
 TODO: Example Tasks and Takeaway Tasks
 
 Examples
 =
+TODO: try to implement using test cases for debugging and review practice problem in queue. Make a video of how to do test cases?
 
 Takeaway Task
 =
