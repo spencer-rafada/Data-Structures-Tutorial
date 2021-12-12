@@ -161,8 +161,6 @@ For the example task, you are assigned to make a function that returns the squar
 Also, make sure that the insert function and insert_head function is working as it is designed.
 
 ```python
-import math
-
 class LinkedList:
     class Node:
         def __init__(self, data):
@@ -172,17 +170,6 @@ class LinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
-    
-    def insert_head(self, value):
-        # Create new node
-        new_node = LinkedList.Node(value)
-        # If the list is empty, point both head and tail to new node
-        if self.head is None:
-            pass
-        # If the list is not empty, then only self.head will be affected
-        else:
-            # Implement adding nodes at the front (You can refer to the module)
-            pass
     
     def insert(self, value):
         curr = self.head
@@ -209,16 +196,46 @@ linkedList.insert_head(90)
 linkedList.insert_head(9) # This should not be added since it is not within 10 <= x <= 100
 print(linkedList)
 # Defect(s) Found:
-
-# Test Case 3: Inserting
-# Expected Output:
-linkedList.insert(81)
-linkedList.insert(64)
-print(linkedList)
-# Defect(s) Found:
 ```
 
+For the first test case, we find the defect that the function does not do anything. We can use the built in function sqrt() from math library to pass the first test case.
 
+```python
+import math
+    def sqrt_num(self, value):
+        # Implement the given task. Use Test Cases
+        return math.sqrt(value)
+```
+
+For the second test case, we have to make sure that it only adds numbers that are the square root of numbers from 10 to 100. We can either write a conditional statement for the sqrt_num function or the insert_head function. We will add it onto the sqrt_num function for usability and readability because the same requirements are needed for insert function.
+
+```python
+import math
+    def sqrt_num(self, value):
+        # Implement the given task. Use Test Cases
+        if (10 <= value and value <= 100):
+            return math.sqrt(value)
+```
+
+We find out that linkedList is empty when we print it. There must be a defect in inserting the values. Let us fix this by applying what we learned about Linked Lists this chapter.
+
+```python
+def insert_head(self, value):
+    # Create new node
+    new_node = LinkedList.Node(value)
+    # If the list is empty, point both head and tail to new node
+    if self.head is None:
+        self.tail = new_node
+        self.head = new_node
+    # If the list is not empty, then only self.head will be affected
+    else:
+        # Implement adding nodes at the front (You can refer to the module)
+        new_node.next = self.head
+        self.head.prev = new_node
+        self.head = new_node
+```
+
+Here is the [solution]()
 
 Takeaway Task
 =
