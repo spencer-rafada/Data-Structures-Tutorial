@@ -158,8 +158,46 @@ Example
 =
 For the example task, you are assigned to make a function that returns the square root of a number and store into a linked list. It only accepts numbers from 10 to 100. Any number besides this will not be added to the linked list.
 
-TODO: Test cases for queues1Asolved.py
+Also, make sure that the insert function and insert_head function is working as it is designed.
+
+```python
+import math
+
+class LinkedList:
+    class Node:
+        def __init__(self, data):
+            self.data = data
+            self.prev = None
+            self.next = None
+    def __init__(self):
+        self.head = None
+        self.tail = None
+    
+    def insert_head(self, value):
+        # Create new node
+        new_node = LinkedList.Node(value)
+        # If the list is empty, point both head and tail to new node
+        if self.head is None:
+            pass
+        # If the list is not empty, then only self.head will be affected
+        else:
+            # Implement adding nodes at the front (You can refer to the module)
+            pass
+    
+    def insert(self, value):
+        curr = self.head
+        while curr is not None:
+            if curr.next is None:
+                # Implement adding from tail
+            return # Exit the function since we added it
+            curr = curr.next
+    
+    def sqrt_num(self, value):
+        # Implement the given task. Use Test Cases
+```
+
+
 
 Takeaway Task
 =
-TODO: linkedlist1A.py is problem and video
+TODO: fill linkedlist1Asolved.py problem and video

@@ -46,16 +46,10 @@ class LinkedList:
         curr = self.head
         new_node = LinkedList.Node(value)
         while curr is not None:
-            if curr.data == value:
-                # If the first occurance is at the tail, we will add from the tail
-                if curr == self.tail:
-                    pass
-                    # Implement adding from the tail/back.
-                else:
-                    # Implement adding from the middle of the linked list.
-                    # Be mindful of your links.
-                    pass
-                return # We exit the function once the value is found.
+            if value < curr.data:
+                # When value is less than curr.data in the first occurance, add node before curr
+                # Implement adding from middle
+                return # We exit the function once the new node is added
             curr = curr.next
 
     def remove_time(self, value):
