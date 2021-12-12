@@ -121,13 +121,45 @@ Operation | Dynamic Array | Linked List
 
 Debugging using Test Cases
 =
-TODO: optimize this
+As a programmer, debugging is a useful technique to have in your skill set. Debugging helps us ensure the quality of our code.**Testing** is a process of demonstrating that specific inputs will result in expected outputs. We can write **test cases** based on what the code does and each test case includes an **expected result**.
 
-TODO: Example Tasks and Takeaway Tasks
+Let's try using test cases for the [example problem](1-queue.md) we had for Queues.
 
-Examples
+```python
+elif selection == "2":
+    # Problem 2, make algorithm for dequeuing a car
+    pass
+```
+
+Here are some test cases I can think of for this problem:
+
+```python
+# Test 1
+# Scenario: Ensure that the program dequeues a car
+# Expected Result: Remove one car
+elif selection == "2":
+    pitstop_queue.pop(0) 
+```
+This program will ensure that it dequeues a car, but it will cause an error when there are no cars in the queue and you use the **.pop()** function. We will use another test case and modify our code to pass the test case.
+
+```python
+# Test 2
+# Scenario: No car in the queue
+# Expected Result: No cars in the pit.
+if len(pitstop_queue) > 0:
+    pitstop_queue.pop(0)
+else:
+    print("No cars in the pit.")
+```
+
+We are able to ensure the quality of our code because of testing and the use of test cases. This is why testing is important in assuring the quality of our code.
+
+Example
 =
-TODO: try to implement using test cases for debugging and review practice problem in queue. Make a video of how to do test cases?
+For the example task, you are assigned to make a function that returns the square root of a number and store into a linked list. It only accepts numbers from 10 to 100. Any number besides this will not be added to the linked list.
+
+TODO: Test cases for queues1Asolved.py
 
 Takeaway Task
 =
+TODO: linkedlist1A.py is problem and video

@@ -16,15 +16,28 @@ In the example from the [introduction](0-introduction.md), we will assume that t
 ![image of tower of tires](images/tires-00.jpg)
 In Python code, the code would look like this...
 ```python
-tires = [1, 2, 3, 4, 5] # fixed size
-# The #1 tire is the bottom one since it is the first one that is put.
+tires = [] # initializing dynamic array
+# To add tires you use .append function
+tires.append(1) # add tire 1
+tires.append(2)
+tires.append(3)
+tires.append(4)
+tires.append(5)
 ```
-
-TODO: share snippet codes how to append and pop
 
 > If we would have to make the size bigger, we would have to copy all of the contents of the lists. Initialize a bigger lists (preferrably twice the size of the older lists). Move all the contents of the older lists to the bigger lists. This takes O(n) performance because we would have to iterate through each data in the lists and copy.
 
-In Task 1, we used **Stacks** to solve the problem. It is a lot faster to take the tire from the top of the tower than taking the most bottom one. Meanwhile, for task 2, we used **Queues** to solve the problem. However, for this specific problem it is not safe to use tires that has been sitting in the garage for too long because it may develop *tire bubbles*.
+In Task 1, we used **Stacks** to solve the problem. It is a lot faster to take the tire from the top of the tower than taking the most bottom one. In Python code it would be:
+
+```python
+tires.pop() # Remove tire 5
+```
+
+Meanwhile, for task 2, we used **Queues** to solve the problem. However, for this specific problem it is not safe to use tires that has been sitting in the garage for too long because it may develop *tire bubbles*. In Python code it would be:
+
+```python
+tires.pop(0) # Remove tire 1
+```
 
 >Remember: That is the tradeoff when deciding what Data Structure to implement in our solution to the problem. There is no "best data structures" in general, but there is a "best data structures for a specific task."
 
@@ -50,7 +63,7 @@ Funtions / Python Code | Description | Cars | Performance |
 | length(car_queue) | Returns the length of the queue | Returns how much cars are queue in the pits | O(1) - performance for finding the length of the list
 | if len(car_queue) == 0: | Returns true if the length of the queue is zero or queue is empty | Check if there are cars in the pits | O(1) - performance for checking if the list is empty
 
-Examples
+Example
 =
 We will now code a program that will help the pitcrew keep a list of incoming cars.
 
@@ -133,7 +146,7 @@ elif selection == "3":
 ```
 We add conditional statements to make sure that it only displays the queue when pitstop_queue is not empty. The next condition would be to print it is clear when pitstop_queue is empty.
 
-Here is a possible [solution](files/queues1A.py) for the example.
+Here is a possible [solution](files/queues1Asolved.py) for the example.
 
 Takeaway Task
 =
