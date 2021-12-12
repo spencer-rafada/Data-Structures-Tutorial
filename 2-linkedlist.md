@@ -156,7 +156,7 @@ We are able to ensure the quality of our code because of testing and the use of 
 
 Example
 =
-For the example task, you are assigned to make a function that returns the square root of a number and store into a linked list. It only accepts numbers from 10 to 100. Any number besides this will not be added to the linked list.
+For the example task, you are assigned to make a function that returns the square root of a number and store into a linked list. It only accepts numbers from 10 to 100. Any number that is not a square root of a number from 10 to 100 will not be added to the linked list.
 
 Also, make sure that the insert function and insert_head function is working as it is designed.
 
@@ -194,6 +194,28 @@ class LinkedList:
     
     def sqrt_num(self, value):
         # Implement the given task. Use Test Cases
+        pass
+
+# Test Case 1: sqrt_num function returns square root
+# Expected Output:
+num = sqrt_num(9) 
+print(num) 
+# Defect(s) Found:
+
+# Test Case 2: Inserting from head
+# Expected Output:
+linkedList = LinkedList()
+linkedList.insert_head(90)
+linkedList.insert_head(9) # This should not be added since it is not within 10 <= x <= 100
+print(linkedList)
+# Defect(s) Found:
+
+# Test Case 3: Inserting
+# Expected Output:
+linkedList.insert(81)
+linkedList.insert(64)
+print(linkedList)
+# Defect(s) Found:
 ```
 
 
