@@ -150,4 +150,6 @@ Here is a possible [solution](files/queues1Asolved.py) for the example.
 
 Takeaway Task
 =
-TODO: copy 04_teach_customer_service.py implement into F1 racing and FIA
+There could potentially be a lot of racing incidents that needs rulings and judgement from the FIA. Depending on their decision, we will make a queue program for them to keep track of the racing incidents and reports that comes to them.
+
+Here is the [code](files/queues1B.py) for the takeaway task.
