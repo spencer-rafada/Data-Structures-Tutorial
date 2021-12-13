@@ -235,8 +235,8 @@ def insert_head(self, value):
         self.head = new_node
 ```
 
-Here is the [solution]()
+Here is the [solution](files/linkedlist1Asolved.py) for this example code.
 
 Takeaway Task
 =
-TODO: fill linkedlist1Asolved.py problem and video
+For your takeaway task, refer to this [problem](files/linkedlist1B.py).
