@@ -35,7 +35,7 @@ class FIA_Ruling:
         """
         Dequeue the next driver and display the information
         """
-        passs
+        pass
 
 reports = FIA_Ruling(15)
 print("Task 1")
